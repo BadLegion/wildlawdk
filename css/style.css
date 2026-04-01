@@ -1319,3 +1319,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-main-grid { grid-template-columns: 1fr; }
   .testimonial-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: 20% 30%;
+  }
+}
