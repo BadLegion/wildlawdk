@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wild Law Denmark – Juridisk ekspertise inden for vildtlivs- og miljøret. Rådgivning, compliance og naturbeskyttelse." />
+  <title>WILD LAW Denmark</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Primær navigation">
+    <div class="nav-container">
+
+      <!-- Logo – text only in navbar -->
+      <a href="#hero" class="nav-logo" aria-label="Wild Law Denmark – gå til toppen">
+        <span class="logo-main">WILD LAW</span>
+        <span class="logo-sub">Denmark</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#services"   data-i18n="nav_services">Hvordan kan jeg hjælpe?</a>
+        <a href="#about"      data-i18n="nav_about">Om Wild Law Denmark</a>
+        <a href="#projects"   data-i18n="nav_projects">Samarbejder</a>
+        <a href="#contact"    data-i18n="nav_contact">Kontakt</a>
+      </div>
+
+      <!-- Language switcher – desktop -->
+      <div class="lang-switcher" aria-label="Vælg sprog">
+        <button class="lang-btn active" data-lang="da" onclick="setLang('da')" aria-label="Dansk">🇩🇰 DA</button>
+        <button class="lang-btn"        data-lang="en" onclick="setLang('en')" aria-label="English">🇬🇧 EN</button>
+        <button class="lang-btn"        data-lang="es" onclick="setLang('es')" aria-label="Español">🇪🇸 ES</button>
+        <button class="lang-btn"        data-lang="fr" onclick="setLang('fr')" aria-label="Français">🇫🇷 FR</button>
+        <button class="lang-btn"        data-lang="de" onclick="setLang('de')" aria-label="Deutsch">🇩🇪 DE</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Åbn menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobilmenu">
+    <a href="#services"   data-i18n="nav_services"   data-section>Hvordan kan jeg hjælpe?</a>
+    <a href="#about"      data-i18n="nav_about"       data-section>Om Wild Law Denmark</a>
+    <a href="#projects"   data-i18n="nav_projects"    data-section>Samarbejder</a>
+    <a href="#contact"    data-i18n="nav_contact"     data-section>Kontakt</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" data-lang="da" onclick="setLang('da')">🇩🇰 DA</button>
+      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">🇬🇧 EN</button>
+      <button class="lang-btn"        data-lang="es" onclick="setLang('es')">🇪🇸 ES</button>
+      <button class="lang-btn"        data-lang="fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn"        data-lang="de" onclick="setLang('de')">🇩🇪 DE</button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Forside">
+    <div class="hero-bg" role="img" aria-label="Vild natur"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Wildlife Law · København</p>
+      <h1 data-i18n="hero_title">WILD LAW Denmark</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Wildlife is precious.</p>
+      <a href="#services" class="btn-primary" data-i18n="hero_cta">Hvordan kan jeg hjælpe?</a>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="services" aria-label="Ydelser">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="services_tag">Ydelser</span>
+        <h2 data-i18n="services_heading">Juridisk ekspertise for naturen</h2>
+        <p data-i18n="services_subheading">At navigere i miljøretten er komplekst – men afgørende for vildtlivets beskyttelse. Jeg tilbyder juridisk ekspertise, der gør dette landskab klarere og sikrer, at bevaringsbestræbelser er juridisk solide.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service1_title">Internationale &amp; lokale regler</h3>
+          <p data-i18n="service1_desc">Vejledning om Konventionen om Biologisk Mangfoldighed, CITES og relaterede internationale rammer for vildtlivsbeskyttelse.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service2_title">Compliance &amp; Ansvar</h3>
+          <p data-i18n="service2_desc">Forståelse af dine forpligtelser under EU's Zoodirektiv, Handelsforordninger for vildtliv og Miljøansvarsdirektivet.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 3-11 3"/>
+              <path d="M3.82 21.34A15.94 15.94 0 0 1 8 17c2-1 4-1 6-2"/>
+            </svg>
+          </div>
+          <h3 data-i18n="service3_title">Dyrevelfærd &amp; Naturbeskyttelse</h3>
+          <p data-i18n="service3_desc">Strategisk forsvar og politisk rådgivning under national miljølovgivning, Dyrevelfærdsloven og Naturbeskyttelsesloven.</p>
+        </div>
+
+      </div>
+
+      <!-- Education card -->
+      <div class="education-card reveal">
+        <div>
+          <p class="edu-tag" data-i18n="education_tag">Undervisning</p>
+          <h3 data-i18n="education_title">Kurser &amp; Workshops</h3>
+          <p data-i18n="education_desc">Skræddersyede kurser og workshops, der dækker integration af international lovgivning, EU-regler og lokale regler · Praktiske håndhævelsesstrategier · Juridiske udfordringer i vildtlivsbevarelse · Moderne juridiske strukturer for biodiversitetsbeskyttelse.</p>
+        </div>
+        <div class="edu-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="about" aria-label="Om Wild Law Denmark">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <!-- Image -->
+        <div class="about-image-wrap reveal">
+          <img
+            src="images/ida.jpg"
+            alt="Ida Christine L. Jacobsen – Wildlife-advokat"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal reveal-delay-2">
+          <span class="section-tag" data-i18n="about_tag">Om mig</span>
+          <h2 data-i18n="about_heading">Fortaler for naturen</h2>
+          <p class="about-name" data-i18n="about_name">Ida Christine L. Jacobsen</p>
+          <p class="about-role"  data-i18n="about_role">Danmarks dedikerede wildlife-advokat</p>
+          <p data-i18n="about_bio">Jeg leder Wild Law Denmark, en start-up virksomhed baseret i København, hvor jeg tilbyder juridisk støtte, foredrag og bevaringsmanagement til private investorer, virksomheder og organisationer. Min mission er ansvarlig udnyttelse af naturressourcer og aktivt engagement med globale bevaringsrammer.</p>
+          <div class="about-education">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <span data-i18n="about_education">LL.M. i jura · Aarhus Universitet · Speciale i vildtlivs- og miljøret</span>
+          </div>
+
+          <!-- DR media mention + inline player -->
+          <div class="about-dr-mention">
+            <div class="about-dr-header">
+              <img src="images/dr-logo.webp" alt="DR" class="about-dr-logo" />
+              <div class="about-dr-text">
+                <span class="about-dr-label" data-i18n="media_label">Som hørt på</span>
+                <span class="about-dr-episode">P1 · Vildt Naturligt – <em data-i18n="media_episode">"Dyrenes advokat"</em></span>
+              </div>
+              <a
+                href="https://www.dr.dk/lyd/p1/vildt-naturligt/vildt-naturligt-2026/dyrenes-advokat-11032623061"
+                target="_blank"
+                rel="noopener"
+                class="about-dr-external"
+                aria-label="Åbn på DR.dk"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+            <audio
+              class="about-dr-audio"
+              controls
+              preload="none"
+              aria-label="DR P1 – Vildt Naturligt: Dyrenes advokat"
+            >
+              <source
+                src="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11032623061/ab1c0005d4baf6f0ec42aa861db065a7f466f444ee5aa1b28cce3ec6f7046daa.mp3"
+                type="audio/mpeg"
+              />
+            </audio>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Vision cards -->
+      <h2 class="vision-heading reveal" data-i18n="vision_heading">Min vision</h2>
+      <div class="vision-grid">
+        <div class="vision-card reveal reveal-delay-1">
+          <div class="vision-num">01</div>
+          <h3 data-i18n="vision1_title">Naturens rettigheder</h3>
+          <p data-i18n="vision1_desc">Bør naturen have juridisk anerkendelse som entitet frem for ejendom? Jeg arbejder for ecocentriske værdier inden for de eksisterende juridiske rammer for at styrke naturbeskyttelsen.</p>
+        </div>
+        <div class="vision-card reveal reveal-delay-2">
+          <div class="vision-num">02</div>
+          <h3 data-i18n="vision2_title">Moderne Vildtlivsbevarelse</h3>
+          <p data-i18n="vision2_desc">Menneskets brug af naturen er uundgåelig – det er vores ansvar at sikre, at det sker på den mest bæredygtige måde, helst til fordel for naturen selv.</p>
+        </div>
+        <div class="vision-card reveal reveal-delay-3">
+          <div class="vision-num">03</div>
+          <h3 data-i18n="vision3_title">Miljøansvar &amp; Biodiversitet</h3>
+          <p data-i18n="vision3_desc">Miljøansvarsretssager er et fremvoksende redskab til bevarelse. EU's Miljøansvarsdirektiv kan forene antropocentriske strukturer med ecocentriske bevaringsværdier.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECTS / SAMARBEJDER
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="projects" aria-label="Samarbejder og projekter">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="projects_tag">Samarbejder</span>
+        <h2 data-i18n="projects_heading">Projekter &amp; Nyheder</h2>
+        <p data-i18n="projects_subheading">Organisationer og institutioner jeg samarbejder med om vildtlivs- og miljøret.</p>
+      </div>
+
+      <div class="partners-grid">
+
+        <div class="partner-card reveal reveal-delay-1">
+          <div class="partner-logo-wrap">
+            <img src="images/zooCentral.png" alt="ZooCentral logo" class="partner-logo" loading="lazy" />
+          </div>
+          <div class="partner-body">
+            <h3 data-i18n="project1_title">Skribent hos ZooCentral</h3>
+            <p data-i18n="project1_desc">Udgivelse af juridiske artikler om overholdelse af miljølovgivning for ZooCentral – Dansk Dyrepasserforening.</p>
+            <a href="http://www.zoocentral.dk/lovgivning.html" target="_blank" rel="noopener" class="btn-outline" data-i18n="project1_link">Besøg ZooCentral</a>
+          </div>
+        </div>
+
+        <div class="partner-card reveal reveal-delay-2">
+          <div class="partner-logo-wrap">
+            <img src="images/Hansenberg.png" alt="Hansenberg logo" class="partner-logo" loading="lazy" />
+          </div>
+          <div class="partner-body">
+            <h3 data-i18n="project2_title">Underviser på Hansenberg</h3>
+            <p data-i18n="project2_desc">Undervisning af studerende i overholdelse af relevant miljølovgivning, herunder CITES og EU's Zoodirektiv.</p>
+            <a href="https://www.hansenberg.dk/uddannelser/erhvervsuddannelser/foedevarer-jordbrug-og-oplevelser/grundforloeb-1-dyr-landbrug-og-gartneri/dyrepasser/" target="_blank" rel="noopener" class="btn-outline" data-i18n="project2_link">Besøg Hansenberg</a>
+          </div>
+        </div>
+
+        <div class="partner-card reveal reveal-delay-3">
+          <div class="partner-logo-wrap">
+            <img src="images/dzs.png" alt="Dansk Zoologisk Selskab logo" class="partner-logo" loading="lazy" />
+          </div>
+          <div class="partner-body">
+            <h3 data-i18n="project3_title">Dansk Zoologisk Selskab</h3>
+            <p data-i18n="project3_desc">Aktiv deltager i naturbeskyttelsesprojekter og juridisk rådgiver for den ikke-statslige organisation DZS.</p>
+            <a href="https://dzs.dk/" target="_blank" rel="noopener" class="btn-outline" data-i18n="project3_link">Besøg DZS</a>
+          </div>
+        </div>
+
+        <div class="partner-card reveal reveal-delay-4">
+          <div class="partner-logo-wrap">
+            <img src="images/cites.png" alt="CITES CoP20 logo" class="partner-logo" loading="lazy" />
+          </div>
+          <div class="partner-body">
+            <h3 data-i18n="project4_title">Observer – CITES CoP20</h3>
+            <p data-i18n="project4_desc">Tildelt observatørstatus ved den 20. partskonference i Samarkand, Usbekistan, november–december 2025.</p>
+            <a href="https://cites.org/eng" target="_blank" rel="noopener" class="btn-outline" data-i18n="project4_link">Besøg CITES</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT / FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer id="contact" aria-label="Kontakt og sidefod">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <!-- Left: heading + info -->
+        <div class="contact-left reveal">
+          <span class="section-tag" data-i18n="contact_tag">Kontakt</span>
+          <h2 data-i18n="contact_heading">Lad os tale om naturen</h2>
+          <p data-i18n="contact_subheading">Har du spørgsmål om vildtlivsret eller ønsker du juridisk rådgivning? Jeg hører gerne fra dig.</p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-label" data-i18n="contact_email_label">E-mail</p>
+                <p class="contact-item-value"><a href="mailto:wildlawdk@gmail.com">wildlawdk@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item-label" data-i18n="contact_cvr_label">CVR</p>
+                <p class="contact-item-value">44386178</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <!-- 💡 For at aktivere formularen: opret gratis konto på formspree.io
+             og erstat YOUR_FORM_ID med dit eget form-ID                       -->
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/wildlawdk"
+            method="POST"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname" data-i18n="form_name_label">Navn</label>
+                <input type="text" id="fname" name="name" required data-i18n-placeholder="form_name" placeholder="Dit navn" />
+              </div>
+              <div class="form-group">
+                <label for="femail" data-i18n="form_email_label">E-mail</label>
+                <input type="email" id="femail" name="email" required data-i18n-placeholder="form_email" placeholder="Din e-mail" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject" data-i18n="form_subject_label">Emne</label>
+              <input type="text" id="fsubject" name="subject" data-i18n-placeholder="form_subject" placeholder="Emne" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage" data-i18n="form_message_label">Besked</label>
+              <textarea id="fmessage" name="message" rows="5" required data-i18n-placeholder="form_message" placeholder="Din besked..."></textarea>
+            </div>
+            <button type="submit" class="btn-form-submit">
+              <span data-i18n="form_send">Send besked</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+
+      <hr class="footer-divider" />
+
+      <!-- Footer bottom: logo + tagline + copyright + social -->
+      <div class="footer-bottom">
+        <div class="footer-logo-block">
+          <img
+            src="images/logo.png"
+            class="footer-logo-img"
+            alt="Wild Law Denmark logo"
+            loading="lazy"
+          />
+          <p class="footer-tagline" data-i18n="footer_tagline">Juridisk ekspertise for naturens fremtid</p>
+        </div>
+        <div class="footer-right">
+          <p class="footer-copyright" data-i18n="footer_copyright">© 2025 Wild Law Denmark. Alle rettigheder forbeholdes.</p>
+          <p class="footer-photos" data-i18n="footer_photos">Fotos: Unsplash</p>
+        </div>
+      </div>
+
+      <!-- Social links row -->
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ida-christine-l-jacobsen-28b439157/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.instagram.com/wildlawdk" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

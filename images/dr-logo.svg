@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 50" width="80" height="50">
+  <rect width="80" height="50" rx="4" fill="#c8002d"/>
+  <!-- DR text -->
+  <text x="10" y="35" font-family="Arial Black, sans-serif" font-size="26" font-weight="900" fill="white" letter-spacing="-1">DR</text>
+  <!-- Sound bars -->
+  <rect x="52" y="22" width="4" height="16" rx="2" fill="white"/>
+  <rect x="59" y="16" width="4" height="22" rx="2" fill="white"/>
+  <rect x="66" y="10" width="4" height="28" rx="2" fill="white"/>
+  <rect x="73" y="19" width="4" height="19" rx="2" fill="white"/>
+</svg>
